@@ -116,7 +116,7 @@
   body[data-density="boardroom"] input.actual-input { padding: 11px 12px; font-size: 14px; }
   body[data-density="boardroom"] .mh-left h1 { font-size: 46px; }
   body[data-density="boardroom"] .progress-card .big { font-size: 68px; }
-  body[data-density="boardroom"] .stile .num { font-size: 56px; }
+  body[data-density="boardroom"] .stile .num { font-size: 36px; }
   body[data-density="boardroom"] .pod { margin-bottom: 28px; }
 
   body[data-density="compact"] { font-size: 12.5px; }
@@ -134,10 +134,10 @@
   body[data-density="compact"] .status-seg button { padding: 5px 0; }
   body[data-density="compact"] .mh-left h1 { font-size: 30px; }
   body[data-density="compact"] .progress-card .big { font-size: 44px; }
-  body[data-density="compact"] .stile .num { font-size: 36px; }
+  body[data-density="compact"] .stile .num { font-size: 22px; }
   body[data-density="compact"] .pod { margin-bottom: 14px; }
   body[data-density="compact"] .progress-card { min-height: 110px; padding: 16px 18px; }
-  body[data-density="compact"] .stile { min-height: 110px; padding: 14px 14px 12px; }
+  body[data-density="compact"] .stile { min-height: 56px; padding: 8px 10px; }
 
   /* ─────────── STATUS STYLE ─────────── */
   /* "bar" (default) — handled by base CSS above */
@@ -543,14 +543,14 @@
   .stile {
     background: var(--paper-2);
     border: 1px solid var(--hair);
-    padding: 18px 18px 16px;
+    padding: 10px 14px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
     cursor: default;
     transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-    min-height: 142px;
+    min-height: 70px;
   }
   .stile:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -18px rgba(28,25,22,0.4); }
   .stile.active {
@@ -578,11 +578,11 @@
   .stile .num {
     font-family: "Newsreader", Georgia, serif;
     font-variation-settings: "opsz" 48;
-    font-size: 46px;
+    font-size: 28px;
     line-height: 0.95;
     letter-spacing: -0.03em;
     color: var(--ink);
-    margin: 6px 0 4px;
+    margin: 2px 0 2px;
     font-feature-settings: "tnum";
   }
   .stile .lbl {
@@ -1610,30 +1610,3 @@ try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch
 </script>
 </body>
 </html>
-
-<style id="__om-edit-overrides">
-#scorecardBody >.pod [data-key="mc::Content Published"] .metric-source { color: rgb(50, 50, 50) !important }
-#scorecardBody >.pod [data-key="mc::Content Published"] .metric-source { color: rgb(0, 0, 0) !important }
-#scorecardBody >.pod [data-key="mc::Content Published"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="mc::Content Calendar On-Schedule (%)"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="dir::Positive Outcomes A–C (%)"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="dir::New Deals Created"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="dir::New Capital Wired"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="dir::Pipeline Coverage Ratio"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="dir::Overdue Tasks"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Legacy Investor Calls Completed"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Investor Base Coverage (% of 84 touched)"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Raving Fan Stage (%)"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Avg Call Duration"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Referrals Received This Week"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Repeat Capital Committed"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Repeat Capital Wired"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Advocacy Ladder Movement (upgrades)"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Peer Referral Asks Initiated"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="ie::Referrals Received (Peer)"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="imm::Qualified Introductions to DIR"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="imm::Email Open Rate — Nurture (%)"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="imm::S&A Boxes Sent This Week"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="imm::Hygiene Scorecard (0–100)"] .metric-source { color: rgb(3, 3, 3) !important }
-#scorecardBody >.pod [data-key="imm::Event RSVPs Confirmed This Week"] .metric-source { color: rgb(3, 3, 3) !important }
-</style>
